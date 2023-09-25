@@ -1,0 +1,81 @@
+.week-list-container {
+    position: relative;
+    text-align: center;
+
+    .title {
+        width: 5rem;
+        font-size: 18px;
+        padding: 0 1rem 1rem 1rem;
+        border-bottom: solid 3px #f1f1f1;
+    }
+
+    .week-list {
+        height: 85%;
+        overflow-y: scroll;
+        position: relative;
+        scrollbar-width: none;
+        -ms-overflow-style: none;  
+
+        .week-item {
+            cursor: pointer;
+            margin: 1.6rem 0;
+            transition: 250ms;
+            position: relative;
+            padding: 0 1.2rem 0 1.5rem;
+
+            .each-week-item {
+                font-size: 15px;
+                padding: 0.2rem 0;
+                transition: background-color 250ms;
+            }
+            
+            .each-week-item.active {
+                color: #cf5b82;
+                border-radius: 1rem;
+                background-color: #ff00000e;
+            }
+            
+            .each-week-item.active::after {
+                top: 50%;
+                right: 0;
+                width: 2px;
+                content: "";
+                height: 18px;
+                position: absolute;
+                transform: translateY(-50%);
+                background-color: #cf5b82;
+            }
+        }
+        
+        .week-item:hover {
+            color: #cf5b82;
+            transform: scale(1.02);
+        }
+        
+        .week-item::before {
+            top: 50%;
+            right: 0;
+            content: "";
+            width: 14px;
+            height: 2px;
+            position: absolute;
+            background-color: #f1f1f1;
+            transform: translateY(-50%);
+        }
+    }
+
+    .week-list::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.week-list-container::after {
+    left: 0;
+    width: 90%;
+    content: "";
+    height: 4rem;
+    bottom: 1.5rem;
+    position: absolute;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 60%);
+}

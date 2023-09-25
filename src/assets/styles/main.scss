@@ -1,0 +1,70 @@
+// GLOBAL CLASSES
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: solid 2px #654e8083;
+  }
+
+  button {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    background: #654e80;
+    border-radius: 1rem;
+  }
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout {
+    border-radius: 1rem;
+    background: #ffffff;
+}
+
+.black-text {
+    color: #000000
+}
+
+.purple-text {
+    color: #8361ee;
+}
+
+.grey-text {
+    color: #adadad;
+}
+
+.dark-grey-text {
+    color: #636363;
+}
+
+.large-text {
+    font-size: 38px;
+}
+
+.smaller-text {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}

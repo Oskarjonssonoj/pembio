@@ -1,0 +1,75 @@
+.menu-list {
+    width: 20%;
+    height: 100%;
+    background: #f5f5f5;
+    border-radius: 1rem 0 0 1rem;
+    
+    .list-container {
+        padding: 2.5rem;
+        
+        .logo {
+            height: 3rem;
+            margin-left: 0.5rem;
+            border-radius: 0.75rem;
+        }
+        
+        .current-costumer-container {
+            display: flex;
+            padding: 1rem 0;
+            flex-direction: column;
+        }
+
+        .current-costumer-content.closed {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 250ms;
+        }
+    
+        .current-costumer-content.opened {
+            max-height: 200px;
+            transition: max-height 250ms;
+        }
+
+        .list-item {
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 22px;
+            transition: 250ms;
+            cursor: pointer;
+            border-radius: 0.5rem;
+
+            .fa-caret-down {
+                width: 8px;
+                transition: 250ms; 
+            }
+
+            .fa-caret-down.closed {
+                transform: rotate(270deg)
+            }
+        
+            .fa-caret-down.opened {
+                transform: rotate(360deg)
+            }
+        }
+
+        .list-item.navigation {
+            font-size: 18px;
+        }
+    
+        .list-item:hover {
+            background: #f1f1f1;
+            transform: scale(1.05)
+        }
+
+        .invite-members-container {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0 2rem 0;
+            border-top: solid 3px #f1f1f1;
+
+            span {
+                margin: 0.75rem 0 0 0.5rem;
+            }
+        }
+    }
+}
