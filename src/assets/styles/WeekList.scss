@@ -12,6 +12,7 @@
     .week-list {
         height: 85%;
         overflow-y: scroll;
+        overflow-x: hidden;
         position: relative;
         scrollbar-width: none;
         -ms-overflow-style: none;  
