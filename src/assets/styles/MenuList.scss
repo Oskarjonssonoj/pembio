@@ -32,13 +32,13 @@
             margin: 0;
             padding: 0.5rem;
             font-size: 22px;
-            transition: 250ms;
+            transition: 150ms;
             cursor: pointer;
             border-radius: 0.5rem;
 
             .fa-caret-down {
                 width: 8px;
-                transition: 250ms; 
+                transition: 150ms; 
             }
 
             .fa-caret-down.closed {
@@ -56,7 +56,7 @@
     
         .list-item:hover {
             background: #f1f1f1;
-            transform: scale(1.05)
+            transform: scale(1.03)
         }
 
         .invite-members-container {
