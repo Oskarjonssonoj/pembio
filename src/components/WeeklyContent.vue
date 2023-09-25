@@ -1,5 +1,5 @@
 <template>
-  <div class="weekly-content">
+  <div class="weekly-content flex-horizontal">
     <WeeklyContentItem title="Upcoming week" 
                        emoji="✌️" 
                        content="Here's a quick summary of your week. Check out these performance statistics and personalized tips."
@@ -32,7 +32,6 @@ export default {
 <style scoped>
   .weekly-content {
     flex: 1;
-    display: flex;
     margin: 0 1rem;
     justify-content: space-between;
   }

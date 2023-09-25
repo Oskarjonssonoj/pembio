@@ -1,6 +1,4 @@
 .weekly-tasks {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
 
     .tasks-list {
@@ -25,10 +23,8 @@
         }
     }
 
-    .form-container {
-        display: flex;
-        border-top: solid 2px #654e8042;
+    .form-container { 
         margin-top: 1rem;
-        flex-direction: column;
+        border-top: solid 2px #654e8042;
     }
 }

@@ -1,7 +1,7 @@
 <template>
-  <div class="workplace layout">
+  <div class="workplace layout flex-horizontal">
     <MenuList/>
-    <div class="right-section">
+    <div class="right-section flex-horizontal">
       <WeeklyContent/>
       <WeekList :weekList=weekList @changeWeek="toggleNewWeek"/>
     </div>
@@ -69,16 +69,13 @@ export default {
   .workplace {
     width: 95%;
     height: 85%;
-    display: flex;
     max-width: 1400px;
     padding: 0.5rem 0 0.5rem 0.5rem;
     justify-content: space-between;
   }
 
   .right-section {
-    display: flex;
     margin-top: 5.5rem;
-    flex-direction: row;
     justify-content: space-between;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="weekly-content-item" @click="markItemAsFavorite">
+  <div class="weekly-content-item flex-horizontal" @click="markItemAsFavorite">
   <template v-if="isBirthday">
     <div class="birthday-container"></div>
     <h2>{{ title }}<span>{{ emoji }}</span>️</h2>

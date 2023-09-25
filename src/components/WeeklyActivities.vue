@@ -1,7 +1,7 @@
 <template>
-  <div class="weekly-activities">
+  <div class="weekly-activities flex-horizontal">
    <WeeklyTasks id="purple"/>
-   <div class="right-column">
+   <div class="right-column flex-vertical">
     <WeeklyContentItem id="birthday" 
                        title="Kate's birthday" 
                        emoji="✌️" 
@@ -37,12 +37,5 @@ export default {
 </script>
 
 <style scoped>
-  .weekly-activities {
-    display: flex;
-  }
-
-  .weekly-activities .right-column {
-    display: flex;
-    flex-direction: column;
-  }
+  
 </style>

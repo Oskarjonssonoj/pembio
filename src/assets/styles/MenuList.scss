@@ -14,9 +14,7 @@
         }
         
         .current-costumer-container {
-            display: flex;
             padding: 1rem 0;
-            flex-direction: column;
         }
 
         .current-costumer-content.closed {
@@ -62,8 +60,6 @@
         }
 
         .invite-members-container {
-            display: flex;
-            flex-direction: column;
             padding: 1rem 0 2rem 0;
             border-top: solid 3px #f1f1f1;
 
